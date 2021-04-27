@@ -1,0 +1,234 @@
+:root {
+    --text-color: rgb(255, 255, 255);
+    --background-color: rgb(51, 51, 51);
+    --acent-color: rgb(150, 150, 150);
+}
+
+
+body {
+    margin: 0;
+    font-family: Jua;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: var(--text-color);  
+}
+
+.navbar__logo i {
+    color: mediumorchid;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+    background-color: rgb(150, 150, 150);
+    border-radius: 4px;
+}
+
+.navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+    
+    .home__two {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.home__one {
+    background-color: rgb(66, 66, 66);   
+    display: flex;
+    width:100%;
+	height: 100%;
+}
+
+.home__one ul {
+	color:rgb(255, 255, 255);
+	font-size: 20px;
+    padding: 11.5% 10%;
+    list-style: none;
+	transform: translate(50%, 7%);
+    border: 1px solid;
+
+}
+
+.home__two {
+    background-image: url(./macarons-4053115_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    display: flex;
+    width:100%;
+	height: 100%;
+    
+}
+
+.home__two ul {
+    list-style: none;
+    color: rgb(66, 66, 66);
+    border: 1px solid;
+    font-size: 20px;
+    padding: 11.5% 10%;
+    margin-left: 15%;
+    
+}
+
+.home__one button {
+    width:120px;
+	height: 40px;
+	color:rgb(104, 100, 100);
+	background: rgb(255, 255, 255);
+	font-size: 16px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+}
+button:focus {
+	outline:0;
+}
+button:hover{
+	background: rgba(28, 228, 168, 0.9);
+	cursor: pointer;
+    color: white;
+	box-shadow: 0 2px 4px rgba(28, 228, 168, 0.6);
+}
+
+.home__one ul:hover {
+    cursor: pointer;
+}
+
+.home__three {
+    background-color: rgb(248, 224, 229);   
+    display: flex;
+    width:100%;
+	height: 50%;
+}
+
+.home__three ul {
+	color:rgb(255, 255, 255);
+	font-size: 20px;
+    list-style: none;
+	transform: translate(50%, 7%);
+    border: 1px solid;
+    margin-left: 30%;
+}
+
+.home__three button {
+    width:250px;
+	height: 50px;
+	color:rgb(104, 100, 100);
+	background: rgb(255, 255, 255);
+	font-size: 16px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+    margin: auto;
+    padding: 5px;
+
+
+    
+}
+button:focus {
+	outline:0;
+}
+button:hover{
+	background: rgba(28, 228, 168, 0.9);
+	cursor: pointer;
+    color: white;
+	box-shadow: 0 2px 4px rgba(28, 228, 168, 0.6);
+}
+
+.home__two button {
+    width:250px;
+	height: 50px;
+	color:rgb(104, 100, 100);
+	background: rgb(255, 255, 255);
+	font-size: 16px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+    margin: auto;
+    padding: 10px;
+
+
+
+    
+}
+button:focus {
+	outline:0;
+}
+button:hover{
+	background: rgba(28, 228, 168, 0.9);
+	cursor: pointer;
+    color: white;
+	box-shadow: 0 2px 4px rgba(28, 228, 168, 0.6);
+}
